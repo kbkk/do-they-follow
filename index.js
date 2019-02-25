@@ -4,7 +4,7 @@ const categorizeUrls = require('./src/categorize-urls');
 const extractUrls = require('./src/extract-urls');
 
 const URL = process.argv[2].trim();
-const SCANNED_EXTERNAL_LINKS_LIMIT = 10;
+const SCANNED_EXTERNAL_LINKS_LIMIT = 90;
 
 const queue = new PQueue({concurrency: 5});
 const followedLinks = {};
